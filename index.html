@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
   <Title>Character Builder</Title>
-  <link href="css.styles.css" rel="stylesheet" type="text.css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/scripts.js"></script>
 </head>
 <body>
@@ -12,10 +12,8 @@
         <form id="name">
           <label for="nameinput">type your character's name</label>
           <input id="nameinput" type="text" name="nameinput">
-          <button type="submit">submit your name</button>
         </form>
       </div>
-
       <div>
       <h2>select your character type</h2>
         <form id="character-type">
@@ -83,15 +81,20 @@
     
     <div>
     <h2>Select your race</h2>
-      <form id="character-race">
-        <select id="race">
-          <option>Human</option>
-          <option>Dwarf</option>
-          <option>Elf</option>
-          <option>Orc</option>
-        </select>
-        <button type="submit">submit</button>
-      </form>
+      <form id="radio-form">
+        <label>
+          <input type="radio" name="race" value="human" checked>
+          Human
+        </label><br>
+        <label>
+          <input type="radio" name="race" value="dwarf">
+          Dwarf
+        </label><br>
+        <label>
+          <input type="radio" name="race" value="elf">
+          Elf
+        </label><br>
+    </form>
     </div>
 
 
