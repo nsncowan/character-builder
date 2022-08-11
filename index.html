@@ -8,38 +8,91 @@
 <body>
   <div>
     <h1>Please Build Your Character!</h1>
-    <form id="name">
-      <label for="nameinput">type your character's name</label>
-      <input id="nameinput" type="text" name="nameinput">
-      <button type="submit">submit your name</button>
-    </form>
-  </div>
+      <h2>Character Name</h2>
+        <form id="name">
+          <label for="nameinput">type your character's name</label>
+          <input id="nameinput" type="text" name="nameinput">
+          <button type="submit">submit your name</button>
+        </form>
+      </div>
 
-  <div>
-    <h1>select your character type</h1>
-    <form id="character-type">
-      <select id="type">
-        <option id="barbarian">Barbarian</option>
-        <option id="cleric">cleric</option>
-        <option id="ranger">ranger</option>
-        <option id="paladin">paladin</option>
-      </select>
-      <button type="submit">submit</button>
-    </form>
-  </div>
-
-  <div>
-    <h1>Select your race</h1>
-    <form id="race">
-      <select id="type">
-        <option>Human</option>
-        <option>Dwarf</option>
-        <option>Elf</option>
-        <option>Orc</option>
-      </select>
-      <button type="submit">submit</button>
-    </form>
-  </div>
+      <div>
+      <h2>select your character type</h2>
+        <form id="character-type">
+          <select id="type">
+            <option id="barbarian">Barbarian</option>
+            <option id="cleric">cleric</option>
+            <option id="ranger">ranger</option>
+            <option id="paladin">paladin</option>
+          </select>
+          <button type="submit">submit</button>
+        </form>
+      </div>
+      <div id="barbarian-stats" class="hidden">
+        <h2>You chose Barbarian!</h2>
+          <h3>Stats</h3>
+            <ul>
+              <li>Strength: 18</li>
+              <li>Constitution: 16</li>
+              <li>Dexterity: 12</li>
+              <li>Intelligence: 10</li>
+              <li>Wisdom: 8</li>
+              <li>Charisma: 14</li>
+            </ul>
+            <p>Master of strength and rage, they will beat you up for sure!</p>
+      </div>
+      <div id="cleric-stats" class="hidden">
+        <h2>You chose Cleric!</h2>
+          <h3>Stats</h3>
+            <ul>
+              <li>Strength: 15</li>
+              <li>Constitution: 14</li>
+              <li>Dexterity: 8</li>
+              <li>Intelligence: 10</li>
+              <li>Wisdom: 18</li>
+              <li>Charisma: 14</li>
+            </ul>
+            <p>I guess I'm a priest or something maybe I'll actually make a try to roleplay as religious person.</p>
+      </div>
+      <div id="ranger-stats" class="hidden">
+        <h2>You chose Ranger!</h2>
+          <h3>Stats</h3>
+            <ul>
+              <li>Strength: 12</li>
+              <li>Constitution: 14</li>
+              <li>Dexterity: 18</li>
+              <li>Intelligence: 11</li>
+              <li>Wisdom: 16</li>
+              <li>Charisma: 8</li>
+            </ul>
+            <p>Master sharpshooter, with a hankering for exploring the wilds!</p>
+      </div>
+      <div id="paladin-stats" class="hidden">
+        <h2>You chose Paladin!</h2>
+          <h3>Stats</h3>
+            <ul>
+              <li>Strength: 16</li>
+              <li>Constitution: 14</li>
+              <li>Dexterity: 10</li>
+              <li>Intelligence: 10</li>
+              <li>Wisdom: 14</li>
+              <li>Charisma: 16</li>
+            </ul>
+            <p>A more grumpy violent version of a cleric!</p>
+      </div>
+    
+    <div>
+    <h2>Select your race</h2>
+      <form id="character-race">
+        <select id="race">
+          <option>Human</option>
+          <option>Dwarf</option>
+          <option>Elf</option>
+          <option>Orc</option>
+        </select>
+        <button type="submit">submit</button>
+      </form>
+    </div>
 
 
 
